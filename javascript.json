@@ -3,12 +3,12 @@
 		"prefix": "scrollToRef",
 		"body": [
 			"const myRef = useRef(null);",
-    		"const scrollToRef = (ref) => ref.current.scrollIntoView({behavior: 'smooth'});",
+			"const scrollToRef = (ref) => ref.current.scrollIntoView({behavior: 'smooth'});",
 			"useEffect(() => scrollToRef(myRef), [])",
 			"<div ref={myRef}>This is the content to scroll to...</div>",
 			"<button onClick={() => scrollToRef(myRef)}>Scroll button</button>"
 		],
 		"description": "scroll to a div reference using useRef hook"
 	},
-	
+
 }
