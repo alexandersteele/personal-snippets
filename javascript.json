@@ -13,8 +13,17 @@
 	},
 	"[REACT] useState": {
 		"prefix": "useState",
-		"body": ["const [state, setState] = useState('');"],
+		"body": ["const [$1, $2] = useState($3);"],
 		"description": "Create a functional state hook"
+	},
+	"[Express] Express Start Server": {
+		"prefix": "expressStart",
+		"body": [
+			"const express = require('express');",
+			"const app = express();",
+			"app.get('', (req, res) => res.send('hello'));",
+			"app.listen(3000, () => console.log(`Server is running on 3000...`));"
+		]
 	}
 
 }
