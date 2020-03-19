@@ -36,6 +36,24 @@
 			"app.get('', (req, res) => res.send('hello'));",
 			"app.listen(3000, () => console.log(`Server is running on 3000...`));"
 		]
+	},
+
+
+
+	////////////////////////////////////////////////////////////////////////////
+	// JavaScript Snippets /////////////////////////////////////////////////////
+	////////////////////////////////////////////////////////////////////////////
+	"[JavaScript] Console log": {
+		"prefix": "log",
+		"body": "console.log();"
+	},
+	"[JavaScript] Google Map": {
+		"prefix": "gmap",
+		"body": [
+			"new google.maps.Map(document.getElementById('$1'), {",
+			"\tzoom: 1, center: {lat: $2, lng: $3}",
+			"})"
+		]
 	}
 
 }
